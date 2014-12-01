@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>index</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <link rel="stylesheet" href="css/animation.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+    
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.isotope.js"></script>
+    
+  <script src="js/jquery.infinitescroll.min.js"></script>
+  <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
+
+  <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/sort.js"></script>
+</head>
+
+<body>
+  <header class="header-wrapper"> 
+   <div class="container logo">
+      <h1>
+        <i class="icon-twitter"></i>
+          <a href="main.html">All Pages Are Mine</a>
+      </h1>
+ 
+      <!-- Modal -->
+    <div id="sign-up" class="modal fade hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-remote="include/register.html">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <!-- <h3 id="myModalLabel">회원가입</h3> 나중에 아이콘 넣을 곳 (앨범형, 리스트형)-->
+      </div>
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+    </div>
+   </div>  
+  </header>
+
+    
+<div class="container gallery gallery2">     
+  <div class="navbar select-option">
+    <div class="btn-group" style="visibility:hidden">
+      <button class="btn dropdown-toggle" data-toggle="dropdown">정렬바꾸기 <span class="caret"></span></button>
+      <ul class="dropdown-menu" id="sort-by">
+        <li><a href="#nameAsc">이름순</a></li>
+        <li><a href="#nameDesc">이름역순</a></li>
+        <li><a href="#original">시간순</a></li>
+        <li><a href="#random">랜덤</a></li>
+      </ul>
+    </div>  
+    <form class="navbar-search form-search pull-right">
+      <div class="input-append">
+        <input type="text" class="span2 search-query" placeholder="Search">
+        <button type="submit" class="btn btn-primary"><i class="icon-search"></i></button>
+      </div>       
+    </form>
+  </div>
+
+  <ul class="thumbnails" id="gallery">
+    <script src="js/calldata.js"></script>
+  </ul>
+</div>        
+  </body>
+</html>

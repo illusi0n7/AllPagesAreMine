@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum=scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+	<title>Header,Footer 고정</title>
+<!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			width:100%;
+			position:fixed;
+			top:0;
+		}
+		header.long{
+			height:120px;
+			background: none;
+			transition: all 1s cubic-bezier(0.000, 0.9, 0.640, 1.260);
+		}
+		header.short{
+			height:70px;
+			background-color: gray;
+			transition: all 0.25s cubic-bezier(0.000, 0.695, 0.460, 0.500);
+		}
+	</style>
+
+	<script type="text/javascript">
+	$(window).scroll(function(){
+    //    if  ($(window).scrollTop() == $(document).height() - $(window).height()){ 
+        if ($(window).scrollTop() !== 0){
+	    	$('header').removeClass('long');
+	    	$('header').addClass('short');
+	    	/*$('header').css("background-color", "white");
+	    	$('header').css("height", "70px");
+	    	$('header').css("transition", "all 0.2s cubic-bezier(0.445, 0.9, 0.045, 0.7)");*/
+        }
+	    else{
+	    	$('header').removeClass('short');
+	    	$('header').addClass('long');/*
+	    	$('header').css("background","-webkit-linear-gradient(top, rgba(255,255,255,0) 80%, rgba(255,255,255,0.5) 100%)");*/
+
+	    }
+	    /*http://matthewlein.com/ceaser/*/
+
+    //    } 
+	});
+	</script>
+	
+</head>
+<body>
+
+	<header class="long">
+		<h3>header</h3>
+	</header>
+
+	<div data-role="content">
+	<table>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	<tr>
+	<td height="300">content1</td>
+	</tr>
+	</table>
+
+	</div>
+
+	<footer data-role="footer" data-position="fixed">
+	<h3>화면 하단</h3>
+	</footer>
+
+
+</body>
+</html>

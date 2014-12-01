@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+*{font-family: 'Nanum Gothic', sans-serif;}
+header.header-wrapper {
+	background: #393E44;
+	color: #ddd;
+	margin-bottom: 15px;
+}
+.header-wrapper h1{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.header-wrapper a, .footer-wrapper a {
+	color: #ddd;
+	margin-top:  15px;
+}
+
+footer.footer-wrapper {
+background: #454A52;
+color: #ddd;
+margin-top: 15px;
+}
+
+#page .nav .leftItem {
+	position: absolute;
+	top: 0px;
+	left: -5px;
+}
+#page .nav .leftItem li{
+	float:left;
+}
+#page_search {
+	display: block;
+	top: 18px !important;
+	right: 13px !important;
+	width: 150px;
+	height: 18px;
+	padding: 2px 30px 0px 30px;
+	border: 1px solid #e2e2e2;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px rgba(255,255,255,0.67), inset 1px 1px 2px 0px rgba(0,0,0,0.25);
+}
+
+ul#gallery li.span3 div.caption a.deleteBtn{
+	display: inline;
+	width:5px;
+	height:5px;
+}
+
+ul#gallery li.span3 div.caption a.deleteBtn:active{
+	display: none;
+}
+

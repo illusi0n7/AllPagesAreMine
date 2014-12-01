@@ -1,0 +1,51 @@
+div.noteAll {
+    font-family: 'Lucida Grande', 'Helvetica', sans-serif;
+    background-color: #ff9;
+    color:black;
+    width: 150px; height: 150px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+    z-index: 11001px;
+}
+
+div.noteAll:hover .closebutton {
+    display: block;
+}
+
+.closebutton {
+    display: none;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 155px;
+    top: 0px;
+}
+
+.closebutton:hover, 
+.closebutton:active {
+    background-color: olive;
+}
+
+.edit {
+    color:black;
+    outline: none;
+    border: 0px;
+    background: rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+/*
+.timestamp {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 9px;
+    background-color: #db0;
+    color: white;
+    border-top: 1px solid #a80;
+    padding: 2px 4px;
+    text-align: right;
+}*/
