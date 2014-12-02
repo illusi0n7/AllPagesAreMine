@@ -3,20 +3,20 @@ AllPagesAreMine
 
 All Pages Are Mine make possible to modify public web page.
   
-## Markup 
-
+## Functions
+----
 ![Markup Image][palette]
 
 After dragging, You can see palette for markup text.
-
+----
 ![Editing Image][editing]
 
 You can change font size, font color, background color etc. 
-
+----
 ![Deleting Image][deleting]
 
 In 'Element Deleting' mode, you can choose DOM element and delete it. Background color of selected element will be changed to red.
-
+----
 ![Memo][memo]
 
 All Pages Are Mine provide instant memo service.
