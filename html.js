@@ -1,5 +1,5 @@
 // modify start point & end point from Selection anchor node & focus node
-// and middle section can modified by accessing range element
+// and middle section can modified by accessing range element fff
 /*
 //apam-check
 function handleReiteration(htmlCode) {
