@@ -11,7 +11,16 @@ After dragging, You can see palette for markup text.
 
 ![Editing Image][editing]
 
-After
+You can change font size, font color, background color etc. 
+
+![Deleting Image][deleting]
+
+In 'Element Deleting' mode, you can choose DOM element and delete it. Background color of selected element will be changed to red.
+
+![Memo][memo]
+
+All Pages Are Mine provide instant memo service.
+
 
 [deleting]:https://cloud.githubusercontent.com/assets/3348878/5259682/859816b0-7a47-11e4-971e-60e8c7ae7a87.png "deleting"
 [editing]:https://cloud.githubusercontent.com/assets/3348878/5259681/85980152-7a47-11e4-85cf-ce917d9eaeb8.png "editing"
