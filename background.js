@@ -11,9 +11,9 @@ function onClickHandler(info, tab) {
     }
     else if (info.menuItemId == "eraser") {
         console.log("checkbox item " + info.menuItemId +
-        " was clicked, state is now: " + info.checked +
-        " (previous state was " + info.wasChecked + ")");
-      
+            " was clicked, state is now: " + info.checked +
+            " (previous state was " + info.wasChecked + ")");
+
         if (info.checked){
             chrome.tabs.sendMessage(tab.id, {eraser: "on"})
         }
@@ -29,9 +29,15 @@ chrome.contextMenus.onClicked.addListener(onClickHandler);
 chrome.runtime.onInstalled.addListener(function() {
     //Create one test item for each context type.
     var contexts = ["page", "selection", "link", "editable", "image", "video", "audio"];
-    for (var i=0; i<contexts.length; i++) {
-        var context = contexts[i];
-        var id = chrome.contextMenus.create({"title": "Add Memo", "contexts":[context], "id": "memo" });
-        var id = chrome.contextMenus.create({"title": "Delete Element", "type": "checkbox", "contexts":[context], "id": "eraser"});
-  }
+    var id = chrome.contextMenus.create({
+        "title": "Add Memo", 
+        "contexts":contexts, 
+        "id": "memo" 
+    });
+    var id = chrome.contextMenus.create({
+        "title": "Delete Element", 
+        "type": "checkbox", 
+        "contexts":contexts, 
+        "id": "eraser"
+    });
 });
